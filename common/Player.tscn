@@ -1,0 +1,285 @@
+[gd_scene format=3 uid="uid://da5a6ysd1s8b8"]
+
+[ext_resource type="Script" uid="uid://dbyfg2hisqw0b" path="res://common/player.gd" id="1_010j1"]
+[ext_resource type="Script" uid="uid://cr3ac72wgiqhs" path="res://common/rays.gd" id="2_46dee"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2m5a4"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1221958222]
+script = ExtResource("1_010j1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=985081376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_2m5a4")
+
+[node name="Rays" type="Node3D" parent="." unique_id=828039988]
+script = ExtResource("2_46dee")
+
+[node name="Ray1" type="RayCast3D" parent="Rays" unique_id=1834400387]
+transform = Transform3D(0.42261824, 0, -0.9063078, 0, 1, 0, 0.9063078, 0, 0.42261824, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray2" type="RayCast3D" parent="Rays" unique_id=765612406]
+transform = Transform3D(0.57357645, 0, -0.81915206, 0, 1, 0, 0.81915206, 0, 0.57357645, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray3" type="RayCast3D" parent="Rays" unique_id=1921635198]
+transform = Transform3D(0.70710677, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, 0.70710677, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray4" type="RayCast3D" parent="Rays" unique_id=311732328]
+transform = Transform3D(0.81915206, 0, -0.57357645, 0, 1, 0, 0.57357645, 0, 0.81915206, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray5" type="RayCast3D" parent="Rays" unique_id=737338774]
+transform = Transform3D(0.90630776, 0, -0.4226182, 0, 1, 0, 0.4226182, 0, 0.90630776, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray6" type="RayCast3D" parent="Rays" unique_id=505638544]
+transform = Transform3D(0.9659258, 0, -0.2588191, 0, 1, 0, 0.2588191, 0, 0.9659258, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray7" type="RayCast3D" parent="Rays" unique_id=1938518391]
+transform = Transform3D(1.0000001, 0, -8.940697e-08, 0, 1, 0, 8.940697e-08, 0, 1.0000001, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray8" type="RayCast3D" parent="Rays" unique_id=2015864083]
+transform = Transform3D(1.0000001, 0, -8.195639e-08, 0, 1, 0, 8.195639e-08, 0, 1.0000001, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray9" type="RayCast3D" parent="Rays" unique_id=515035009]
+transform = Transform3D(0.9659259, 0, 0.2588189, 0, 1, 0, -0.2588189, 0, 0.9659259, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray10" type="RayCast3D" parent="Rays" unique_id=1876031512]
+transform = Transform3D(0.9063078, 0, 0.4226182, 0, 1, 0, -0.4226182, 0, 0.9063078, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray11" type="RayCast3D" parent="Rays" unique_id=1869972264]
+transform = Transform3D(0.8191522, 0, 0.5735765, 0, 1, 0, -0.5735765, 0, 0.8191522, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray12" type="RayCast3D" parent="Rays" unique_id=932051205]
+transform = Transform3D(0.7071069, 0, 0.70710665, 0, 1, 0, -0.70710665, 0, 0.7071069, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray13" type="RayCast3D" parent="Rays" unique_id=1391186442]
+transform = Transform3D(0.5735766, 0, 0.81915206, 0, 1, 0, -0.81915206, 0, 0.5735766, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Ray14" type="RayCast3D" parent="Rays" unique_id=737050572]
+transform = Transform3D(0.42261866, 0, 0.9063079, 0, 1, 0, -0.9063079, 0, 0.42261866, 0, 1.5, 0)
+target_position = Vector3(0, 0, -128)
+
+[node name="Control" type="Control" parent="." unique_id=248841186]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bg" type="ColorRect" parent="Control" unique_id=1058577872]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4971382, 0.65924996, 1, 1)
+
+[node name="Cover1" type="ColorRect" parent="Control" unique_id=1854608220]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1024.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Cover2" type="ColorRect" parent="Control" unique_id=1162375504]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1024.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Floor" type="ColorRect" parent="Control" unique_id=935789391]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 128.0
+offset_top = 320.0
+offset_right = -128.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 0.23921569, 1)
+
+[node name="Walls" type="Control" parent="Control" unique_id=1927598281]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_right = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect1" type="ColorRect" parent="Control/Walls" unique_id=885301630]
+layout_mode = 0
+offset_left = 912.0
+offset_top = -2.0
+offset_right = 976.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(64, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control/Walls" unique_id=1149831424]
+layout_mode = 0
+offset_left = 848.0
+offset_top = -2.0
+offset_right = 912.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Control/Walls" unique_id=98779523]
+layout_mode = 0
+offset_left = 784.0
+offset_top = -2.0
+offset_right = 848.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Control/Walls" unique_id=912770710]
+layout_mode = 0
+offset_left = 720.0
+offset_top = -2.0
+offset_right = 784.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Control/Walls" unique_id=1972699886]
+layout_mode = 0
+offset_left = 656.0
+offset_top = -2.0
+offset_right = 720.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Control/Walls" unique_id=955724287]
+layout_mode = 0
+offset_left = 592.0
+offset_top = -2.0
+offset_right = 656.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Control/Walls" unique_id=1137288804]
+layout_mode = 0
+offset_left = 528.0
+offset_top = -2.0
+offset_right = 592.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="Control/Walls" unique_id=836665663]
+layout_mode = 0
+offset_left = 464.0
+offset_top = -2.0
+offset_right = 528.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(64, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="Control/Walls" unique_id=2073139487]
+layout_mode = 0
+offset_left = 400.0
+offset_top = -2.0
+offset_right = 464.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="Control/Walls" unique_id=182129319]
+layout_mode = 0
+offset_left = 336.0
+offset_top = -2.0
+offset_right = 400.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="Control/Walls" unique_id=1333586742]
+layout_mode = 0
+offset_left = 272.0
+offset_top = -2.0
+offset_right = 336.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="Control/Walls" unique_id=77159816]
+layout_mode = 0
+offset_left = 208.0
+offset_top = -2.0
+offset_right = 272.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="Control/Walls" unique_id=1581829138]
+layout_mode = 0
+offset_left = 144.0
+offset_top = -2.0
+offset_right = 208.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="Control/Walls" unique_id=1371287486]
+layout_mode = 0
+offset_left = 80.0
+offset_top = -2.0
+offset_right = 144.0
+offset_bottom = 646.0
+scale = Vector2(1, 0.5)
+pivot_offset = Vector2(0, 324)
+offset_transform_pivot = Vector2(0, 200)
+color = Color(0.4674778, 0.31995976, 0.18264651, 1)
